@@ -1,5 +1,5 @@
 *{
-	box-sizing: border-box; 
+	box-sizing: border-box;
 	/* This makes the widths of elements more consistent
 		Full details here https://css-tricks.com/box-sizing/ */
 }
@@ -15,13 +15,25 @@ section{
 	margin-right: auto;
 	margin-top: 20px;
 	margin-bottom: 20px;
+   font-size: 30px;
 }
 
+
+h1{
+	font-size: 150%;
+
+}
+
+
 header{
-	background-color: darkOrange;
+	background-color: #70BDCA;
 	color: white; /* more readable on an orange background */
-	padding-top: 50px;
-	padding-bottom: 50px;
+	/* padding-top: 0px;
+	padding-bottom: 0px; */
+	width:100%;
+
+
+
 }
 
 nav{
@@ -43,7 +55,17 @@ nav a:hover{
 	text-decoration: underline; /* Hover styles to let people know they can click it */
 }
 
+a {
+	display: inline-block;
+	background-color: #70BDCA;
+	text-align: center;
+	width: 33.1%;
+	padding: 15px;
+}
 
+a:hover{
+	background-color: #EDEAF9;
+}
 
 /* Simple grid */
 .g-row{
@@ -55,19 +77,27 @@ nav a:hover{
 	width: 100%; /*This makes all images in grids to be the size of their cell */
 }
 
+}
+
+
 .g-50{
-	width: 50%;
+	width: s%;
+	float: left;
+}
+
+.g-40{
+	width: 48%;
 	float: left;
 }
 
 .g-30{
-	width: 30%;
+	width: 48%;
 	float: left;
 }
 
-.g-70{
-	width: 70%;
-	float: left;
+.g-80{
+	width: 48%;
+	float: right;
 }
 
 .show{
